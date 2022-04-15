@@ -19,3 +19,18 @@ class Solution {
        
     }
 }
+---------------------------------------------------------------------------------------
+
+//Using XOR operator
+
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+    
+    int unique=0;
+    for(int i=0;i<nums.length;i++){
+    unique=unique^nums[i];
+    }
+    
+    return unique;
+    }
+    }
