@@ -1,0 +1,29 @@
+import java.util.*;
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        
+        ArrayList<Integer> output=new ArrayList<>();
+        
+    for(int i : nums1){
+        for(int j : nums2){
+            if(i==j){
+                if(!output.contains(i)){
+                output.add(i);
+                break;
+                }
+            }
+        }
+    }
+        int k=0;
+        int []result=new int[output.size()];
+        for(int i: output){
+            result[k]=i;
+            k++;
+        }
+        
+        
+        
+        return result;
+        
+    }
+}
